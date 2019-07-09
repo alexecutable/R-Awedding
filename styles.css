@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -8,10 +8,12 @@ body {
 }
 
 .wrapper {
-  position: absolute;
+  position: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* transform: translate(-50%, -50%); */
 }
 
 .container {
@@ -27,6 +29,13 @@ body {
 
 .navbar {
   height: inherit;
+  margin: auto;
+}
+
+.navbar-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .ribbon {
