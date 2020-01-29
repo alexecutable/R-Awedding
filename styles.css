@@ -9,6 +9,29 @@ body {
   background: #3b5065;
 }
 
+.h1, h1 {
+  text-align: center;
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+}
+
+h1:before, h1:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+h1:after {
+  margin: 0 -55% 0 .5em;
+}
+.carouselover{
+  z-index: 20;
+}
+
 .wrapper {
   position: center;
   top: 50%;
@@ -20,9 +43,7 @@ body {
 .container {
   height: 80%;
   background: #fff;
-  box-shadow: 0 0 20px rgba(98,114,131, 0.5);
   position: relative;
-  padding-top: 100px;
   padding-bottom: 20px;
   word-wrap: break-word;
 }
@@ -37,7 +58,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   flex-direction: row;
-  margin-bottom: -5px;
 }
 
 .nav-link{
@@ -111,7 +131,10 @@ body {
   border-bottom: 25px solid transparent;
 }
 
-.monogram {
+.monogram{
+  height: 4em;
+}
+/* .monogram {
   font-family: 'Delius Swash Caps', cursive;
 font-size: 50px;
 margin-bottom: 0;
@@ -119,8 +142,10 @@ margin-bottom: 0;
 .ampersand {
   font-family: 'Autour One', sans-serif;
   font-size: 30px;
+} */
+img {
+  max-width:100%
 }
-
 .before-monogram {
   padding-left: 10px;
 }
@@ -128,9 +153,19 @@ margin-bottom: 0;
   padding-right: 10px;
 }
 
+.centertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
 @media only screen and (min-width: 768px) {
 
-
+.monogram{
+  height: 5em;
+}
 .container{
   padding-left: 20px;
   padding-right: 20px;
