@@ -14,6 +14,8 @@ body {
   width: 70%;
   margin: .7em auto;
   overflow: hidden;
+  font-family: 'Josefin Slab', cursive;
+  font-weight:bold
 }
 
 h1:before, h1:after {
@@ -153,16 +155,34 @@ img {
   padding-right: 10px;
 }
 
-.centertext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:white;
+.headtext {
+  font-family: 'Josefin Slab',cursive;
+  font-size: 2em;
+  font-weight:bold;
+}
+.subtext {
+  font-family: 'Josefin Slab', cursive;
+  font-size: 2em;
 }
 
-@media only screen and (min-width: 768px) {
+p {
+  margin-bottom: 0;
+}
+.centertext {
+  padding-left: 1em;
 
+}
+
+
+@media only screen and (min-width: 768px) {
+  .headtext {
+    font-family: 'Croissant One',cursive;
+    font-size: 2.5em;
+  }
+
+  .subtext {
+    font-size: 2em;
+  }
 .monogram{
   height: 5em;
 }
@@ -195,4 +215,15 @@ img {
 }
 .ribbon-1 .sub-ribbon-2:after {
   border-right: 25px solid #3b5065;
+}
+.centertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  padding-left: 0;
+}
+#beazell {
+  filter: contrast(30%);
 }
