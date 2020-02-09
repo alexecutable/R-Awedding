@@ -38,8 +38,9 @@ h1:before, h1:after {
 h1:after {
   margin: 0 -55% 0 .5em;
 }
-.carouselover{
-  z-index: 2;
+
+.aboutnames {
+  margin-bottom: 2em;
 }
 
 .wrapper {
@@ -58,7 +59,7 @@ h1:after {
   word-wrap: break-word;
 }
 .main-page {
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .navbar {
   height: inherit;
@@ -147,15 +148,6 @@ h1:after {
 .monogram{
   height: 4em;
 }
-/* .monogram {
-  font-family: 'Delius Swash Caps', cursive;
-font-size: 50px;
-margin-bottom: 0;
-}
-.ampersand {
-  font-family: 'Autour One', sans-serif;
-  font-size: 30px;
-} */
 
 .before-monogram {
   padding-left: 10px;
@@ -165,32 +157,82 @@ margin-bottom: 0;
 }
 
 .headtext {
-  font-family: 'Josefin Slab',cursive;
+  font-family: 'Croissant One',cursive;
   font-size: 2em;
   font-weight:bold;
 }
 .subtext {
   font-family: 'Josefin Slab', cursive;
   font-size: 2em;
+  font-weight: bold;
 }
 
 p {
   margin-bottom: 0;
 }
 .centertext {
-  padding-left: 1em;
 
+  text-align: center;
 }
 #beazell {
     max-width:100%
 }
+.centerobj {
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 @media only screen and (min-width: 768px) {
+  .main-page {
+    padding-top: 5%;
+  }
   .headtext {
     font-family: 'Croissant One',cursive;
     font-size: 2.5em;
   }
-
+  .aboutnames {
+    font-size: 1.5em;
+    margin-bottom: 4em;
+  }
   .subtext {
     font-size: 2em;
   }
@@ -235,48 +277,13 @@ p {
   transform: translate(-50%, -50%);
   color:white;
   padding-left: 0;
+  width: 100%;
 }
 #beazell {
   filter: contrast(30%);
 
 }
 
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.carousel-item {
+  filter:contrast(50%)
 }
