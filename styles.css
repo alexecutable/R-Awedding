@@ -177,6 +177,11 @@ p {
 .centerobj {
   text-align: center;
 }
+.table {
+  text-align: center;
+  width: auto;
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -239,6 +244,7 @@ p {
 .container{
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 960px;
 }
 .ribbon {
   position: absolute;
