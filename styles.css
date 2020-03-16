@@ -222,7 +222,9 @@ p {
   right: 0;
 }
 
-
+.alert {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   .main-page {
     padding-top: 5%;
