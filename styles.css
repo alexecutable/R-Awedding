@@ -292,3 +292,9 @@ p {
 .carousel-item {
   filter:contrast(50%)
 }
+
+.list-group{
+  display: block;
+  padding-left: 5em;
+  padding-right: 5em;
+}
